@@ -1,35 +1,35 @@
 # Configuration de uzbl par Skippy the Kangoo <Skippythekangoo CHEZ yahoo POINT fr
 # tentative de francisation
 
-# === Core settings ==========================================================
+# === Paramètres de base ==========================================================
 
-# common directory locations
+# emplacements de répertoire commun 
 set prefix      = @(echo $PREFIX)@
 set data_home   = @(echo $XDG_DATA_HOME)@
 set cache_home  = @(echo $XDG_CACHE_HOME)@
 set config_home = @(echo $XDG_CONFIG_HOME)@
 
-# Interface paths.
+# Chemin d'interface
 set fifo_dir   = /tmp
 set socket_dir = /tmp
 
 set shell_cmd       = sh -c
 
-# === General config aliases =================================================
+# === Alias généraux de configuration =================================================
 
-# Config related events (use the request function):
-# request MODE_CONFIG <mode> <key> = <value>
+# Événements de configurations liés (utilisez la fonction demandée):
+# requie MODE_CONFIG <mode> <key> = <value>
 set mode_config     = request MODE_CONFIG
-# request ON_EVENT <EVENT_NAME> <command>
-set on_event        = request ON_EVENT
-# request ON_SET   <key/glob> <command>
-set on_set          = request ON_SET
-# request MODMAP <From> <To>
-set modmap          = request MODMAP
-# request IGNORE_KEY <glob>
-set ignore_key      = request IGNORE_KEY
-# request TOGGLE_MODES <mode1> <mode2> ... <moden>
-set toggle_modes    = request TOGGLE_MODES
+# requie ON_EVENT <EVENT_NAME> <command>
+set on_event        = requie ON_EVENT
+# requie ON_SET   <key/glob> <command>
+set on_set          = requie ON_SET
+# requie MODMAP <From> <To>
+set modmap          = requie MODMAP
+# requie IGNORE_KEY <glob>
+set ignore_key      = requie IGNORE_KEY
+# requie TOGGLE_MODES <mode1> <mode2> ... <moden>
+set toggle_modes    = requie TOGGLE_MODES
 
 set set_mode        = set mode =
 set set_status      = set status_message =
