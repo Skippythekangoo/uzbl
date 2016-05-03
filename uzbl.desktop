@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Uzbl-tabbed
+GenericName=Web browser
+GenericName[fr]=Navigateur Web
+Comment=Uzbl - web interface tools which adhere to the unix philosophy.
+Comment[fr]=Uzbl - outils d'interface web adhèrant à la philosophie d'unix.
+Exec=/usr/bin/uzbl-tabbed
+Icon=/usr/share/uzbl/examples/data/uzbl.png
+Terminal=false
+Categories=Network;WebBrowser;
